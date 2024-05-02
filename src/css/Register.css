@@ -1,0 +1,212 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Century Gothic;
+}
+img
+   {background-image: transparent(rgba(0, 0, 0, 1),rgba(0, 0, 0, 1));
+    height: 100vh;
+    background-size: cover;
+    background-position: center; 
+  }
+.logo img{
+	float: left;
+	width: 130px;
+	height: 70px;
+}
+.Menu-bar{
+	background: rgb(151, 190, 241);
+	text-align: center;
+}
+.Menu-bar ul {
+	display: inline-flex;
+	list-style: none;
+	color: black; 
+}
+.Menu-bar ul li{
+       width: 120px;
+       margin: 15px;
+       padding: 10px;
+}
+.Menu-bar ul li a{
+	text-decoration: none;
+	color: black;
+    border: 3px Solid transparent;
+    transition: 0.6s ease;
+}  
+.active, .Menu-bar ul li:hover
+  {
+    font-family: Arial, Helvetica, sans-serif;
+	background: white;
+	border-radius: 3px;
+	color: black;
+}
+
+body
+{
+    background-color: whitesmoke;
+    padding: 0 10px;
+}
+.container
+{
+    border: 1px solid gray;
+    border-radius: 15px;
+    max-width: 500px;
+    width: 100%;
+    background-color: rgb(105, 152, 214);
+    margin: 20px auto;
+    padding: 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.container .title
+{
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 25px;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container .form
+{
+    width: 100%;
+}
+
+.container .form .input_field
+{
+    margin-bottom: 15px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end
+}
+.container .form .input_field label
+{
+    width: 200px;
+    margin-right: 10px;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 1000px;
+}
+
+.container .form .input_field .input
+{
+    width: 100%;
+    outline: none;
+    border: 1px solid gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+    padding-right: 3px;
+    transition: all 0.5 ease;
+}
+.container .form .input_field .selectbox
+{
+    position: relative;
+    width: 100%;
+    height: 37px;
+}
+.container .form .input_field .selectbox select
+{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 100%;
+    padding: 8px 10px;
+    border: 1px solid gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+.container .form .input_field .selectbox:before
+{
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    border: 8px solid black;
+    border-color: rgb(74, 94, 128) transparent transparent transparent;
+    pointer-events: none;
+    font-size: 15px;
+}
+.container .form .input_field .input:focus,
+.container .form .input_field .textarea:focus,
+.container .form .input_field select:focus
+{
+    width: 100%;
+    outline: none;
+    border: 1px solid gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+    padding-right: 3px;
+    transition: all 0.5 ease;
+}
+.container .form .input_field .input:focus,
+.container .form .input_field .textarea:focus,
+.container .form .input_field select:focus
+{
+    border: 1px solid #f0b106;
+}
+.container .form .input_field .textarea
+{
+    resize: none;
+    width: 100%;
+    height: 50px;
+    border-color: gray;
+}
+
+.container .form .input_field p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+}
+.container .form .input_field .button
+{
+    width: 67%;
+    outline: none;
+    border: 1px solid whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 2px;
+    transition: all 0.5s ease;
+    padding-right: 5px;
+    transition: all 0.5 ease;
+    cursor: pointer;
+}
+
+.container .form .input_field .confirmation
+{
+    border: 1px solid gray;
+    font-size: medium;
+    position: relative;
+    width: 67%;
+    border: none;
+    max-width: 100%;
+    padding: 5px;
+    padding-left: 22%;
+    margin: 10px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.link
+{
+    text-decoration: none;
+    font-size: 20px;
+    padding-right: 2%;
+}
